@@ -38,52 +38,52 @@ while True:
     print("6. Calculate Area of a Circle")
     print("7. Calculate Area of a rectangle")
     print("8. Exit")
-    choice1 = int(input("Enter the Choice: "))
+    choice = int(input("Enter the Choice: "))
 
-    if choice1 == 1:
+    if choice == 1:
         num1 = int(input("Enter Number 1: "))
         num2 = int(input("Enter Number 2: "))
         total = add(num1, num2)
         print("Total of the addition process is: ", total)
-    elif choice1 == 2:
+    elif choice == 2:
         num1 = int(input("Enter Number 1: "))
         num2 = int(input("Enter Number 2: "))
         total = sub(num1, num2)
         print("Total of the subtraction process is: ", total)
 
-    elif choice1 == 3:
+    elif choice == 3:
         num1 = int(input("Enter Number 1: "))
         num2 = int(input("Enter Number 2: "))
         total = div(num1, num2)
         print("Total of the division process is: ", total)
 
-    elif choice1 == 4:
+    elif choice == 4:
         num1 = int(input("Enter Number 1: "))
         num2 = int(input("Enter Number 2: "))
         total = mul(num1, num2)
         print("Total of the multiplication process is: ", total, "\n")
-    elif choice1 == 5:
+    elif choice == 5:
             # You have to ask the user for Base and length for triangle area
             base = float(input("Enter the Base of the triangle: "))
             length_tri = float(input("Enter the Length of the triangle: "))
             total = area_tri(base, length_tri)
             print("The area of the triangle is: ", total, "\n")
         # 6. Calculate circle area
-    elif choice1 == 6:
+    elif choice == 6:
             import math
             # Radius for circle area
             radius = float(input("Enter the Radius of the circle: "))
             total = area_cir()
             print("The area of the circle is: ",total,"\n")
         # 7. Calculate rectangle area
-    elif choice1 == 7:
+    elif choice == 7:
             # Length and width for rectangle area
            length_rec = float(input("Enter the Length of the rectangle: "))
            width = float(input("Enter the Width of the rectangle: "))
            total = area_rec(length_rec,width)
            print("The area of the rectangle is: ",total,"\n")
         # 8. Exit
-    elif choice1 == 8:
+    elif choice == 8:
         break
 
     else:
