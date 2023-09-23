@@ -28,6 +28,11 @@ def area_rec(length_rec,width):
     total = length_rec * width
     return total
 
+def get_inputs():
+    num1 = int(input("Enter Number 1: "))
+    num2 = int(input("Enter Number 2: "))
+    return [num1,num2]
+
 while True:
     print("\nMAIN MENU")
     print("1. Calculate addition process")
@@ -41,26 +46,22 @@ while True:
     choice = int(input("Enter the Choice: "))
 
     if choice == 1:
-        num1 = int(input("Enter Number 1: "))
-        num2 = int(input("Enter Number 2: "))
-        total = add(num1, num2)
+        numbers = get_inputs()
+        total = add(numbers[0], numbers[1])
         print("Total of the addition process is: ", total)
     elif choice == 2:
-        num1 = int(input("Enter Number 1: "))
-        num2 = int(input("Enter Number 2: "))
-        total = sub(num1, num2)
+        numbers = get_inputs()
+        total = sub(numbers[0], numbers[1])
         print("Total of the subtraction process is: ", total)
 
     elif choice == 3:
-        num1 = int(input("Enter Number 1: "))
-        num2 = int(input("Enter Number 2: "))
-        total = div(num1, num2)
+        numbers = get_inputs()
+        total = div(numbers[0], numbers[1])
         print("Total of the division process is: ", total)
 
     elif choice == 4:
-        num1 = int(input("Enter Number 1: "))
-        num2 = int(input("Enter Number 2: "))
-        total = mul(num1, num2)
+        numbers = get_inputs()
+        total = mul(numbers[0], numbers[1])
         print("Total of the multiplication process is: ", total, "\n")
     elif choice == 5:
             # You have to ask the user for Base and length for triangle area
